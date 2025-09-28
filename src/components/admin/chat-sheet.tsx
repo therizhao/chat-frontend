@@ -105,7 +105,7 @@ export function ChatSheet({
             Chat #{chatId.slice(-5)}
           </SheetTitle>
 
-          <FollowupList followups={followups} />
+          {followups.length > 0 && <FollowupList followups={followups} />}
         </SheetHeader>
 
         <div className="flex-1 overflow-y-auto px-6 py-4 space-y-4">
