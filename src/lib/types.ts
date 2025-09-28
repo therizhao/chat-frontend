@@ -1,3 +1,5 @@
-import { GetServicesQuery } from "@/graphql/generated/graphql";
-
-export type Service = GetServicesQuery['project']['services']['edges'][number]['node']
+export interface FollowUp {
+  student_email: string;
+  student_phone: string;
+  preferred_time: number;
+}
